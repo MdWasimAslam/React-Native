@@ -4,11 +4,13 @@ import { Link, Redirect, router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../constants";
 import CustomButton from "../Components/CustomButton";
+
+
 const index = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
-      <ScrollView contentContainerStyle={{ height: "100%" }}>
-        <View className="w-full items-center min-h-[85vh] px-4">
+      <ScrollView contentContainerStyle={{ flexGrow:1 }}>
+        <View className="w-full justify-center items-center min-h-[85vh] px-6 ">
           <Image
             source={images.logo}
             className="w-[130px] h-[84px]"
@@ -31,7 +33,7 @@ const index = () => {
               resizeMode="contain"
             />
           </View>
-          <Text className="text-sm fonr-pregular text-gray-100 mt-7 text-center ">
+          <Text className="text-sm font-pregular text-gray-100 mt-7 text-center ">
             Where Creativity Meets innovation: embark on the journey of
             limiteless exploration with Aora
           </Text>
